@@ -1,3 +1,9 @@
+.example{
+border: double 10px;
+columns: #ff0000;;
+
+}
+
 body{
   font-family: "Avenir Next"
   }
@@ -64,6 +70,6 @@ font-size: 60px;
   float: right;
 }
 
-.footer-list li{
-  padding-bottom: 20px;
-}
+
+
+
