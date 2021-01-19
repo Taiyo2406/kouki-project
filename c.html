@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>JAVAについて</title>
+<title>CSSについて</title>
 <link rel="stylesheet" href="abc.css">
 </head>
 <body>
@@ -16,9 +16,48 @@
   </ul>
 </div>
 </div>
+<h1>CSSとはなにか</h1>
 <a id="JAVA"></a>
-<h1>JAVAとはなにか</h1>
 <img src="./image/JAVA.png" alt="HTMLlogo" width="320" height="240">
+<dl>
+<dt>CSSとは、Cascading Style Sheets（カスケーディング・スタイル・シート）の略です。</dt>
+<dd>ウェブページの色や枠、線など様々なスタイルを指定するための言語です。 </dd>
+<dd>CSSもHTMLと同じように組み合わせ構成することで見栄えが良くなります。</dd>
+<dd>(例)</dd>
+</dl>
+<br>
+<div class="example">
+<ul>
+<li>.example{
+border: double 10px;
+columns: #ff0000;;
 
- </body>
+}</li>
+<li>.body{
+  font-family: "Avenir Next"
+  }
+
+li{
+  list-style: none;
+}</li>
+<li>.header{
+background-color:#82aaaa;
+color:#fff;
+height:90px;
+}
+</li>
+<li>.footer{
+  background-color:#82aaaa;
+  color: #fff;
+  height: 120px;
+
+  padding:60px;
+}</li>
+</ul>
+</div>
+<br>
+<dd>などです。これ以外にもありますがここでは、この説明の二重線の枠やボディ、ヘッダー、フッダーの色を構成するものを例としました。</dd>
+<dd>HTMLと違う点は初めは&lt;&gt;終わりに&lt;/&gt;で閉じるのがHTMLでしたがCSSは「.」でIDを指定し｛｝の中に要素を入れることが多いです。</dd>
+</dl>
+  </body>
    </html>
