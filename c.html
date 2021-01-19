@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>CSSについて</title>
+<title>javaについて</title>
 <link rel="stylesheet" href="abc.css">
+<script src="ex1.js"></script>
 </head>
 <body>
 <div class="header">
@@ -16,48 +17,62 @@
   </ul>
 </div>
 </div>
-<h1>CSSとはなにか</h1>
+<h1>javaとはなにか</h1>
 <a id="JAVA"></a>
-<img src="./image/JAVA.png" alt="HTMLlogo" width="320" height="240">
+<img src="./image/JAVA.png" alt="JAVAlogo" width="320" height="240">
 <dl>
-<dt>CSSとは、Cascading Style Sheets（カスケーディング・スタイル・シート）の略です。</dt>
-<dd>ウェブページの色や枠、線など様々なスタイルを指定するための言語です。 </dd>
-<dd>CSSもHTMLと同じように組み合わせ構成することで見栄えが良くなります。</dd>
+<dt>JAVAとは世界的に多く使用されているプログラミング言語のひとつです。</dt>
+<dd>OSに依存せずWEBでの様々な機能などを作成することができます。</dd>
+<dd>またこの言語を使ってゲーム作成などもできます。</dd>
 <dd>(例)</dd>
 </dl>
 <br>
 <div class="example">
 <ul>
-<li>.example{
-border: double 10px;
-columns: #ff0000;;
+<li>
+    &lt;input type="button" value="画像の変更"
+onclick="imgchange01();"&gt;</li>
 
-}</li>
-<li>.body{
-  font-family: "Avenir Next"
-  }
+<li>&lt;input type="button" value="戻る"
+onclick="imgchange02();"&gt;</li>
 
-li{
-  list-style: none;
-}</li>
-<li>.header{
-background-color:#82aaaa;
-color:#fff;
-height:90px;
-}
+<li>&lt;img src='./image/2.jpg' width="320" height="240" id="logo01" alt="run
+"&gt;
 </li>
-<li>.footer{
-  background-color:#82aaaa;
-  color: #fff;
-  height: 120px;
-
-  padding:60px;
-}</li>
 </ul>
 </div>
+
 <br>
-<dd>などです。これ以外にもありますがここでは、この説明の二重線の枠やボディ、ヘッダー、フッダーの色を構成するものを例としました。</dd>
-<dd>HTMLと違う点は初めは&lt;&gt;終わりに&lt;/&gt;で閉じるのがHTMLでしたがCSSは「.」でIDを指定し｛｝の中に要素を入れることが多いです。</dd>
+
+<dd>ここまでできてもJAVAは動きません。そこでもう一つファイルをつくります。</dd>
+
+<div class="example">
+<ul>
+<li>
+ function imgchange01() {
+document.getElementById('logo01').src =
+'./image/1.png';
+}</li>
+
+<li>function imgchange02() {
+document.getElementById('logo01').src =
+'./image/2.jpg';
+}
+</li>
+</ul>
+</div>
+<dd>この「getElementById」でHTMLを書き換えることができるので画像を切り替えることができます。</dd>
 </dl>
+
+<h1>(お手本)</h1>
+<input type="button" value="画像の変更"
+onclick="imgchange01();">
+
+<input type="button" value="戻る"
+onclick="imgchange02();">
+
+<img src='./image/2.jpg' width="320" height="240" id="logo01" alt="run
+Logo">
+
   </body>
    </html>
