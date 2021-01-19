@@ -7,7 +7,7 @@ li{
 }
 
 .header{
-background-color:#26d0c9;
+background-color:#82aaaa;
 color:#fff;
 height:90px;
 }
@@ -47,15 +47,15 @@ font-size: 60px;
 }
 
 .footer{
-  background-color:#2f5167;
-  color: #fff
+  background-color:#82aaaa;
+  color: #fff;
   height: 120px;
 
   padding:60px;
 }
 
 .footer-logo{
-  font-size: 32px
+  font-size: 32px;
   
   float:left;
 }
